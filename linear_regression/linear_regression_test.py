@@ -51,7 +51,7 @@ y_predictions, scratch_weights, scratch_bias = regressor.predict(X_test)
 
 regressor_scikit_learn = linear_model.LinearRegression()
 regressor_scikit_learn.fit(X_train, y_train)
-print("scikit-learn’s solution : weight = ", scratch_weights, "bias = ", scratch_bias)
+print("scikit-learn's solution : weight = ", scratch_weights, "bias = ", scratch_bias)
 print("our solution : weight = ", regressor_scikit_learn.coef_[0], "bias = ", regressor_scikit_learn.intercept_)
 
 mse_value = mean_squared_error(y_test, y_predictions)

@@ -7,6 +7,10 @@ class LinearRegression:
         self.bias = None # a scalar
     
     def gradient_descent_fit(self, X, y):
+        """
+        X: a numpy array with dimension of (n_samples, n_features) or sample training data
+        y: a numpy array with dimension of (n_samples, 1) or result training data
+        """
         n_samples, n_features = X.shape
         self.weights = np.zeros(n_features)
         self.bias = 0
